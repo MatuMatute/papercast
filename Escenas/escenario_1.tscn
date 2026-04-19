@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://bqqqeinlj0lgr"]
+
+[ext_resource type="Script" uid="uid://c32kqe7hjxyro" path="res://Codigo/escenario_1.gd" id="1_474kc"]
+[ext_resource type="Texture2D" uid="uid://bxygd8cy2aw7n" path="res://Visual/Escenarios/1/escenario 1  . 1.png" id="1_xn33k"]
+[ext_resource type="Texture2D" uid="uid://brw1nsvvgkhxc" path="res://Visual/Escenarios/1/escenario 1  . 2.png" id="2_474kc"]
+[ext_resource type="Texture2D" uid="uid://duva6dcpuub6q" path="res://Visual/Escenarios/1/escenario 1  . 3.png" id="3_lnxn8"]
+[ext_resource type="Texture2D" uid="uid://cibs5u78umff3" path="res://Visual/Escenarios/1/escenario 1  . 4.png" id="4_qluyb"]
+[ext_resource type="Texture2D" uid="uid://57vkd4e3h2b7" path="res://Visual/Escenarios/1/escenario 1  . 4.2.png" id="5_86csc"]
+[ext_resource type="Texture2D" uid="uid://q66txknfe746" path="res://Visual/Escenarios/1/escenario 1  . 5.png" id="6_ny7qb"]
+[ext_resource type="Texture2D" uid="uid://dbipk7lxnvfig" path="res://Visual/Escenarios/1/escenario 1  . 5.2.png" id="7_1y178"]
+[ext_resource type="Texture2D" uid="uid://dp4bwug5xq58m" path="res://Visual/Escenarios/1/escenario 1  . 6.png" id="8_hx6ht"]
+[ext_resource type="Texture2D" uid="uid://boi7lppoolkfa" path="res://Visual/Escenarios/1/escenario 1  . 7.png" id="9_0n4x7"]
+[ext_resource type="Texture2D" uid="uid://c3gh76mhxawwo" path="res://Visual/Escenarios/1/escenario 1  . 7.2.png" id="10_830tx"]
+[ext_resource type="Texture2D" uid="uid://bi55i6vnv2mox" path="res://Visual/Escenarios/1/escenario 1  . 8.png" id="11_0sq0p"]
+
+[node name="Escenario1" type="Node2D" unique_id=972374403]
+script = ExtResource("1_474kc")
+
+[node name="Capa1" type="Parallax2D" parent="." unique_id=333061241]
+scroll_scale = Vector2(0.7, 0.7)
+
+[node name="Sprite" type="Sprite2D" parent="Capa1" unique_id=1379172187]
+texture_filter = 1
+texture = ExtResource("1_xn33k")
+centered = false
+
+[node name="Capa2" type="Parallax2D" parent="." unique_id=1681280568]
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite" type="Sprite2D" parent="Capa2" unique_id=2053542654]
+texture = ExtResource("2_474kc")
+centered = false
+
+[node name="Capa3" type="Parallax2D" parent="." unique_id=1641078251]
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite1" type="Sprite2D" parent="Capa3" unique_id=625130614]
+texture = ExtResource("3_lnxn8")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="Capa3" unique_id=174744581]
+texture = ExtResource("4_qluyb")
+centered = false
+
+[node name="Sprite3" type="Sprite2D" parent="Capa3" unique_id=952335267]
+texture = ExtResource("5_86csc")
+centered = false
+
+[node name="Capa4" type="Parallax2D" parent="." unique_id=446539187]
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite" type="Sprite2D" parent="Capa4" unique_id=366521661]
+
+[node name="Capa5" type="Parallax2D" parent="." unique_id=1649255965]
+scroll_scale = Vector2(0.95, 0.95)
+
+[node name="Sprite1" type="Sprite2D" parent="Capa5" unique_id=912189195]
+texture = ExtResource("6_ny7qb")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="Capa5" unique_id=1567553067]
+texture = ExtResource("7_1y178")
+centered = false
+
+[node name="Capa6" type="Parallax2D" parent="." unique_id=2031827110]
+scroll_scale = Vector2(0.95, 0.95)
+
+[node name="Sprite" type="Sprite2D" parent="Capa6" unique_id=1967558179]
+texture = ExtResource("8_hx6ht")
+centered = false
+
+[node name="Capa7" type="Parallax2D" parent="." unique_id=72822160]
+
+[node name="Sprite1" type="Sprite2D" parent="Capa7" unique_id=1721390414]
+texture = ExtResource("9_0n4x7")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="Capa7" unique_id=1379432791]
+texture = ExtResource("10_830tx")
+centered = false
+
+[node name="Capa8" type="Parallax2D" parent="." unique_id=1800995303]
+
+[node name="Sprite" type="Sprite2D" parent="Capa8" unique_id=891195705]
+texture = ExtResource("11_0sq0p")
+centered = false
+
+[node name="Camara" type="Camera2D" parent="." unique_id=2082811050]
+zoom = Vector2(0.5, 0.5)
+limit_left = 0
+limit_top = 0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
