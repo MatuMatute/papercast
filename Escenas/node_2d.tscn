@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bdc8tv0fcnvad"]
+
+[ext_resource type="Script" uid="uid://c1uathfixc2nb" path="res://Codigo/sujeto_de_prueba_1.gd" id="1_iijfg"]
+[ext_resource type="Texture2D" uid="uid://ctuuxbncw21f0" path="res://icon.svg" id="2_eeo38"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2estv"]
+size = Vector2(256, 256)
+
+[node name="Node2D" type="Node2D" unique_id=1062190209]
+
+[node name="SujetoDePrueba1" type="CharacterBody2D" parent="." unique_id=1283401866]
+position = Vector2(630, 356)
+motion_mode = 1
+script = ExtResource("1_iijfg")
+
+[node name="Sprite" type="Sprite2D" parent="SujetoDePrueba1" unique_id=36334018]
+scale = Vector2(2, 2)
+texture = ExtResource("2_eeo38")
+
+[node name="Collision" type="CollisionShape2D" parent="SujetoDePrueba1" unique_id=2006150497]
+shape = SubResource("RectangleShape2D_2estv")

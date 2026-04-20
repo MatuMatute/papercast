@@ -133,6 +133,9 @@ centered = false
 texture = SubResource("CompressedTexture2D_xn33k")
 centered = false
 
+[node name="Animaciones" type="AnimationPlayer" parent="." unique_id=1177040750]
+libraries/ = SubResource("AnimationLibrary_474kc")
+
 [node name="Camara" type="Camera2D" parent="." unique_id=2082811050]
 position = Vector2(1800, 1200)
 zoom = Vector2(0.5, 0.5)
@@ -142,7 +145,3 @@ limit_right = 3840
 limit_bottom = 2160
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
-
-[node name="Animaciones" type="AnimationPlayer" parent="." unique_id=1177040750]
-libraries/ = SubResource("AnimationLibrary_474kc")
-autoplay = &"Movimiento de camara"

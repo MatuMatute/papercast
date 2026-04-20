@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cl823uqbqag6f"]
+
+[ext_resource type="PackedScene" uid="uid://bqqqeinlj0lgr" path="res://Escenas/escenario_1.tscn" id="1_ivuii"]
+
+[node name="Juego" type="Node" unique_id=1850599219]
+
+[node name="Escenario1" parent="." unique_id=972374403 instance=ExtResource("1_ivuii")]
