@@ -1,8 +1,9 @@
+class_name SujetoDePrueba
 extends CharacterBody2D
 
 @export var cuantoVaATardarDaniEnAprenderGDScript : int = 200
 
-# ES IGUAL QUE UPDATE EN UNITY
+# ES IGUAL QUE UPDATE EN UNITY, DANI.
 func _process(_delta: float) -> void:
 	velocity = Vector2.ZERO;
 	if Input.is_action_pressed("Izquierda"):

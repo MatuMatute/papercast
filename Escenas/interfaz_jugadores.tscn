@@ -1,0 +1,289 @@
+[gd_scene format=3 uid="uid://bp1ph4rsqkwds"]
+
+[ext_resource type="Script" uid="uid://db6w31cbiphut" path="res://Codigo/interfaz_jugadores.gd" id="1_527w3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x3t37"]
+bg_color = Color(0.631, 0.125, 1, 1)
+border_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_527w3"]
+bg_color = Color(0, 0.54509807, 1, 1)
+border_color = Color(1, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j8o3c"]
+bg_color = Color(0.9411765, 0.8745098, 0.09803922, 1)
+border_color = Color(1, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fbo0"]
+bg_color = Color(0.93333334, 0, 0, 1)
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_527w3"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_527w3"]
+resource_name = "EntradasDeTeclas"
+length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:Jugador1Trigger")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 9, 9.5, 11, 11.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:Jugador2Trigger")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 12, 12.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:Jugador3Trigger")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 7.5, 8, 10, 10.5, 13, 13.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:Jugador4Trigger")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(7.5, 8, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador2"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador2"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_j8o3c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:Jugador1Trigger")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:Jugador2Trigger")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:Jugador3Trigger")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:Jugador4Trigger")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5fbo0"]
+_data = {
+&"EntradasDeTeclas": SubResource("Animation_527w3"),
+&"RESET": SubResource("Animation_j8o3c")
+}
+
+[node name="InterfazJugadores" type="CanvasLayer" unique_id=1033984996]
+script = ExtResource("1_527w3")
+
+[node name="Jugador1" type="Panel" parent="." unique_id=1760327921]
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x3t37")
+
+[node name="Jugador2" type="Panel" parent="." unique_id=1569228882]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_bottom = 64.0
+grow_horizontal = 0
+pivot_offset = Vector2(64, 0)
+theme_override_styles/panel = SubResource("StyleBoxFlat_527w3")
+
+[node name="Jugador3" type="Panel" parent="." unique_id=111891802]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+offset_right = 64.0
+grow_vertical = 0
+pivot_offset = Vector2(0, 64)
+theme_override_styles/panel = SubResource("StyleBoxFlat_j8o3c")
+
+[node name="Jugador4" type="Panel" parent="." unique_id=819231567]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(64, 64)
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fbo0")
+
+[node name="Puntuacion" type="Label" parent="." unique_id=1539504599]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "0"
+label_settings = SubResource("LabelSettings_527w3")
+horizontal_alignment = 1
+
+[node name="EntradasDeTeclas" type="AnimationPlayer" parent="." unique_id=1193137688]
+libraries/ = SubResource("AnimationLibrary_5fbo0")
+
+[node name="Jugador1Tecla" type="Label" parent="." unique_id=443240444]
+custom_minimum_size = Vector2(64, 64)
+offset_right = 64.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 48
+text = "Q"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugador2Tecla" type="Label" parent="." unique_id=1187641246]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "P"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugador3Tecla" type="Label" parent="." unique_id=2006986874]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 12.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugador4Tecla" type="Label" parent="." unique_id=1419615120]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Shift"
+horizontal_alignment = 1
+vertical_alignment = 1
