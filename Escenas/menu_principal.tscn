@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://dcrfssg0h7xpd"]
 
-[ext_resource type="FontFile" uid="uid://bl73rjwt1l783" path="res://Visual/Fuentes de letra/LondrinaSketch-Regular.ttf" id="1_xv3xs"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_ft1ng"]
-font = ExtResource("1_xv3xs")
-font_size = 72
+[ext_resource type="Script" uid="uid://ct2gaath24m42" path="res://Codigo/menu_principal.gd" id="1_qncgo"]
+[ext_resource type="Texture2D" uid="uid://ctuuxbncw21f0" path="res://icon.svg" id="2_ft1ng"]
+[ext_resource type="Texture2D" uid="uid://p4rpgdummkhv" path="res://Visual/Interfaz de usuario/Logotipo.svg" id="2_qncgo"]
 
 [node name="MenuPrincipal" type="CanvasLayer" unique_id=324355584]
+script = ExtResource("1_qncgo")
 
 [node name="Fondo" type="ColorRect" parent="." unique_id=1223443534]
 anchors_preset = 15
@@ -14,17 +13,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0.17254902, 0.5019608, 1)
+color = Color(0.9564844, 0.63894, 0.4841854, 1)
 
-[node name="Titulo" type="Label" parent="." unique_id=196763196]
+[node name="Titulo" type="TextureRect" parent="." unique_id=1801492174]
 anchors_preset = -1
-anchor_top = 0.2
-anchor_bottom = 0.4
-offset_left = 228.0
-text = "Paper Cast / Actores de papel"
-label_settings = SubResource("LabelSettings_ft1ng")
-horizontal_alignment = 1
-vertical_alignment = 1
+anchor_left = 0.2
+anchor_right = 0.2
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_qncgo")
 
 [node name="Version" type="Label" parent="." unique_id=1578678778]
 anchors_preset = 3
@@ -36,4 +33,31 @@ offset_left = -40.0
 offset_top = -23.0
 grow_horizontal = 0
 grow_vertical = 0
-text = "0.1.4"
+text = "0.1.5"
+
+[node name="ContenedorBotones" type="VBoxContainer" parent="." unique_id=1730750593]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.7
+anchor_right = 0.5
+anchor_bottom = 0.7
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Comenzar" type="TextureButton" parent="ContenedorBotones" unique_id=958359659]
+layout_mode = 2
+texture_normal = ExtResource("2_ft1ng")
+texture_pressed = ExtResource("2_ft1ng")
+texture_hover = ExtResource("2_ft1ng")
+
+[node name="Salir" type="TextureButton" parent="ContenedorBotones" unique_id=240224712]
+layout_mode = 2
+texture_normal = ExtResource("2_ft1ng")
+texture_pressed = ExtResource("2_ft1ng")
+texture_hover = ExtResource("2_ft1ng")
+
+[connection signal="pressed" from="ContenedorBotones/Comenzar" to="." method="BotonComenzarPresionado"]
