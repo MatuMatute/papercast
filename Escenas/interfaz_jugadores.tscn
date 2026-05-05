@@ -25,66 +25,36 @@ outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_527w3"]
 resource_name = "EntradasDeTeclas"
-length = 60.0
-tracks/0/type = "value"
+length = 250.67
+tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:Jugador1Trigger")
+tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 9, 9.5, 11, 11.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [false, true, false, true, false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:Jugador2Trigger")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 12, 12.5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [false, true, false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:Jugador3Trigger")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 7.5, 8, 10, 10.5, 13, 13.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [false, true, false, true, false, true, false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".:Jugador4Trigger")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/4/type = "method"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(7.5, 8, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(3, 3.5, 4, 4.5, 6, 6.5, 7, 7.5, 9, 9.5, 10, 10.5, 12, 12.5, 13, 13.5, 15, 15.5, 16, 16.5, 18, 18.5, 19, 19.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5, 25, 25.5, 29, 29.5, 31, 31.5, 33, 33.5, 34, 34.5, 35, 35.5, 55, 55.5, 56, 56.5, 57, 57.5, 58, 58.5, 60, 60.5, 61, 61.5, 62, 62.5, 63, 63.5, 64, 64.5, 65, 65.5, 66, 66.5, 67, 67.5, 68, 68.5, 69, 69.5, 70, 70.5, 71, 71.5, 72, 72.5, 73, 73.5, 74, 74.5, 75, 75.5, 76, 76.5, 77, 77.5, 78, 78.5, 79, 79.03333, 79.5, 79.53333, 81, 81.03333, 81.5, 81.53333, 82, 82.03333, 82.5, 82.53333, 83, 83.03333, 83.5, 83.53333, 85, 85.5, 86, 86.5, 87, 87.5, 88, 88.03333, 88.5, 88.53333, 89, 89.03333, 89.5, 89.53333, 90, 90.03333, 90.53333, 90.566666, 91, 91.5, 92, 92.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "values": [{
 "args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
 "method": &"MostrarTriggerJugador3"
 }, {
 "args": [],
@@ -109,10 +79,340 @@ tracks/4/keys = {
 "method": &"EsconderTriggerJugador1"
 }, {
 "args": [],
-"method": &"MostrarTriggerJugador2"
+"method": &"MostrarTriggerJugador3"
 }, {
 "args": [],
-"method": &"EsconderTriggerJugador2"
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador4"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador4"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador4"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador4"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador4"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador4"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador4"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador4"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador4"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador4"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador3"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
+}, {
+"args": [],
+"method": &"MostrarTriggerJugador1"
+}, {
+"args": [],
+"method": &"EsconderTriggerJugador1"
 }, {
 "args": [],
 "method": &"MostrarTriggerJugador3"
@@ -121,37 +421,22 @@ tracks/4/keys = {
 "method": &"EsconderTriggerJugador3"
 }]
 }
-
-[sub_resource type="Animation" id="Animation_j8o3c"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:Jugador1Trigger")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:Jugador2Trigger")
+tracks/1/path = NodePath("Jugador1:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 2.5, 3.5, 5.5, 6.5, 8.5, 9.5, 11.5, 12.5, 14.5, 15.5, 17.5, 18.5, 20.5, 22.5, 24.5, 25.5, 55.5, 56.5, 57.5, 58.5, 60.5, 61.5, 62.5, 64.5, 66.5, 68.5, 69.5, 70.5, 72.5, 75.5, 76.5, 77.5, 78.5, 79.5, 80.5, 83.5, 84.5, 85.5, 86.5, 91.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [false]
+"values": [false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath(".:Jugador3Trigger")
+tracks/2/path = NodePath("Jugador2:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -163,7 +448,70 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath(".:Jugador4Trigger")
+tracks/3/path = NodePath("Jugador3:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 3.5, 4.5, 6.5, 7.5, 9.5, 10.5, 12.5, 13.5, 15.5, 16.5, 18.5, 19.5, 22.5, 24.5, 54.5, 55.5, 56.5, 57.5, 59.5, 60.5, 61.5, 62.5, 64.5, 66.5, 68.5, 69.5, 70.5, 72.5, 75.5, 76.5, 77.5, 79.53333, 80.53333, 83.53333, 85.5, 86.5, 87.5, 90.53333, 91.5, 92.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Jugador4:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 28.5, 29.5, 30.5, 31.5, 32.5, 35.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_j8o3c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jugador1:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Jugador2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Jugador3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Jugador4:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -183,11 +531,23 @@ _data = {
 script = ExtResource("1_527w3")
 
 [node name="Jugador1" type="Panel" parent="." unique_id=1760327921]
+visible = false
 offset_right = 64.0
 offset_bottom = 64.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_x3t37")
 
+[node name="Jugador1Tecla" type="Label" parent="Jugador1" unique_id=443240444]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 48
+text = "Q"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Jugador2" type="Panel" parent="." unique_id=1569228882]
+visible = false
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -197,7 +557,23 @@ grow_horizontal = 0
 pivot_offset = Vector2(64, 0)
 theme_override_styles/panel = SubResource("StyleBoxFlat_527w3")
 
+[node name="Jugador2Tecla" type="Label" parent="Jugador2" unique_id=1187641246]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_bottom = 67.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "P"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Jugador3" type="Panel" parent="." unique_id=111891802]
+visible = false
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -207,7 +583,23 @@ grow_vertical = 0
 pivot_offset = Vector2(0, 64)
 theme_override_styles/panel = SubResource("StyleBoxFlat_j8o3c")
 
+[node name="Jugador3Tecla" type="Label" parent="Jugador3" unique_id=2006986874]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -67.0
+offset_right = 64.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Jugador4" type="Panel" parent="." unique_id=819231567]
+visible = false
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -219,6 +611,23 @@ grow_horizontal = 0
 grow_vertical = 0
 pivot_offset = Vector2(64, 64)
 theme_override_styles/panel = SubResource("StyleBoxFlat_5fbo0")
+
+[node name="Jugador4Tecla" type="Label" parent="Jugador4" unique_id=1419615120]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Shift"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Puntuacion" type="Label" parent="." unique_id=1539504599]
 anchors_preset = 5
@@ -234,56 +643,3 @@ horizontal_alignment = 1
 
 [node name="EntradasDeTeclas" type="AnimationPlayer" parent="." unique_id=1193137688]
 libraries/ = SubResource("AnimationLibrary_5fbo0")
-
-[node name="Jugador1Tecla" type="Label" parent="." unique_id=443240444]
-custom_minimum_size = Vector2(64, 64)
-offset_right = 64.0
-offset_bottom = 64.0
-theme_override_font_sizes/font_size = 48
-text = "Q"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Jugador2Tecla" type="Label" parent="." unique_id=1187641246]
-custom_minimum_size = Vector2(64, 64)
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 23.0
-grow_horizontal = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 48
-text = "P"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Jugador3Tecla" type="Label" parent="." unique_id=2006986874]
-custom_minimum_size = Vector2(64, 64)
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -23.0
-offset_right = 12.0
-grow_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 48
-text = "C"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Jugador4Tecla" type="Label" parent="." unique_id=1419615120]
-custom_minimum_size = Vector2(64, 64)
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -23.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_font_sizes/font_size = 24
-text = "Shift"
-horizontal_alignment = 1
-vertical_alignment = 1
