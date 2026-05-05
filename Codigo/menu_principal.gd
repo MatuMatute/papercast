@@ -1,7 +1,6 @@
 extends CanvasLayer
 
-var Nivel : PackedScene = preload("res://Escenas/escenario_1.tscn")
-var Intertitulo : PackedScene = preload("res://Escenas/intertitulo.tscn")
+var Partida : PackedScene = preload("res://Escenas/juego.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,8 +11,9 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_comenzar_pressed() -> void:
-	pass # Replace with function body.
-
+	var inicio:Juego = Partida.instantiate()
+	add_sibling(inicio)
+	queue_free()
 
 func _on_opciones_pressed() -> void:
 	pass # Replace with function body.

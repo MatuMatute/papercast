@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Paper Cast"
-run/main_scene="uid://cl823uqbqag6f"
+run/main_scene="uid://dcrfssg0h7xpd"
 config/features=PackedStringArray("4.6", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://btluat6y58hwa"
