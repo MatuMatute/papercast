@@ -11,5 +11,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func BotonComenzarPresionado() -> void:
+func _on_comenzar_pressed() -> void:
 	pass # Replace with function body.
+
+
+func _on_opciones_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_salir_pressed() -> void:
+	get_tree().quit()
