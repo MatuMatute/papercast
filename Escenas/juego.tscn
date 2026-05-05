@@ -4,19 +4,19 @@
 [ext_resource type="Script" uid="uid://bwkex1po1byr8" path="res://Codigo/juego.gd" id="1_n77xa"]
 [ext_resource type="PackedScene" uid="uid://qy7x0ggy1d4g" path="res://Escenas/intertitulo.tscn" id="2_d3d2o"]
 [ext_resource type="PackedScene" uid="uid://bp1ph4rsqkwds" path="res://Escenas/interfaz_jugadores.tscn" id="4_74bab"]
-[ext_resource type="AudioStream" uid="uid://4okap0dccp8t" path="res://Audio/Musica/Fantasma.mp3" id="4_aoscc"]
 
 [node name="Juego" type="Node" unique_id=1850599219]
 script = ExtResource("1_n77xa")
 
-[node name="Escenario1" parent="." unique_id=972374403 instance=ExtResource("1_ivuii")]
+[node name="PrimeraCancion" parent="." unique_id=972374403 instance=ExtResource("1_ivuii")]
 
 [node name="Intertitulo" parent="." unique_id=1125792773 instance=ExtResource("2_d3d2o")]
+Animacion = "intro"
+
+[node name="Animaciones" parent="Intertitulo" index="2" unique_id=918761236]
+autoplay = &"intro"
 
 [node name="InterfazJugadores" parent="." unique_id=1033984996 instance=ExtResource("4_74bab")]
-
-[node name="Musica" type="AudioStreamPlayer" parent="." unique_id=2056051218]
-stream = ExtResource("4_aoscc")
 
 [connection signal="animation_finished" from="Intertitulo/Animaciones" to="." method="AnimacionFinalizada"]
 

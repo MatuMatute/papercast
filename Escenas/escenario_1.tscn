@@ -10,27 +10,39 @@
 [ext_resource type="Texture2D" uid="uid://dbipk7lxnvfig" path="res://Visual/Escenarios/1/escenario 1  . 5.2.png" id="7_1y178"]
 [ext_resource type="Texture2D" uid="uid://dp4bwug5xq58m" path="res://Visual/Escenarios/1/escenario 1  . 6.png" id="8_hx6ht"]
 [ext_resource type="Texture2D" uid="uid://boi7lppoolkfa" path="res://Visual/Escenarios/1/escenario 1  . 7.png" id="9_0n4x7"]
-[ext_resource type="Texture2D" uid="uid://dojxwhu8lujov" path="res://Visual/Personajes/Christine/Base.png" id="10_474kc"]
 [ext_resource type="Texture2D" uid="uid://c3gh76mhxawwo" path="res://Visual/Escenarios/1/escenario 1  . 7.2.png" id="10_830tx"]
+[ext_resource type="Texture2D" uid="uid://be5n4bkqtqdvl" path="res://Visual/Personajes/Prima Donna/Prima Donna.png" id="10_lnxn8"]
 [ext_resource type="Texture2D" uid="uid://ctuuxbncw21f0" path="res://icon.svg" id="11_lnxn8"]
+[ext_resource type="Texture2D" uid="uid://54jlps8yqsof" path="res://Visual/Escenarios/2/Bambalinas arriba 1.png" id="12_0sq0p"]
+[ext_resource type="Texture2D" uid="uid://dojxwhu8lujov" path="res://Visual/Personajes/Christine/Base.png" id="12_tjnua"]
+[ext_resource type="Texture2D" uid="uid://b5k245a2rsawc" path="res://Visual/Escenarios/2/Bambalinas arriba 1.2.png" id="13_u13x4"]
+[ext_resource type="Texture2D" uid="uid://dapcegd3jgat4" path="res://Visual/Escenarios/2/Bambalinas arriba 2.png" id="14_tjnua"]
+[ext_resource type="Texture2D" uid="uid://c4g5wt60gols5" path="res://Visual/Escenarios/2/Bambalinas arriba 3.png" id="15_jji34"]
+[ext_resource type="Texture2D" uid="uid://bgio7ritxxbxo" path="res://Visual/Escenarios/2/Bambalinas arriba 4.png" id="16_eh51j"]
+[ext_resource type="Texture2D" uid="uid://deulm8fd8xqyq" path="res://Visual/Escenarios/2/Bambalinas arriba 5.png" id="17_jgyl3"]
+[ext_resource type="Texture2D" uid="uid://ytyaqvvlekby" path="res://Visual/Escenarios/2/Bambalinas arriba 6.png" id="18_naidv"]
+[ext_resource type="Texture2D" uid="uid://3771mprfv4i1" path="res://Visual/Escenarios/2/Bambalinas arriba 6.2.png" id="19_6gkyt"]
+[ext_resource type="AudioStream" uid="uid://4okap0dccp8t" path="res://Audio/Musica/Fantasma.mp3" id="22_u13x4"]
+[ext_resource type="Texture2D" uid="uid://b186aavs57dft" path="res://Visual/Personajes/Christine/Cantando.png" id="23_eh51j"]
+[ext_resource type="Texture2D" uid="uid://cxvjive2eauyq" path="res://Visual/Personajes/Christine/Vestido Base.png" id="23_jji34"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xn33k"]
 load_path = "res://.godot/imported/escenario 1  . 8.png-f7fc4a2c40e47cb625fa36e8606981bf.ctex"
 
 [sub_resource type="Animation" id="Animation_474kc"]
 resource_name = "Escena1"
-length = 20.0
+length = 41.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Christine:position")
+tracks/0/path = NodePath("Escenario/PrimaDonna:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 37.7, 37.8),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(1941.0001, 1562.0001)]
+"values": [Vector2(1941.0001, 1562.0001), Vector2(1941.0001, 1562.0001), Vector2(1941, 1800)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -39,10 +51,10 @@ tracks/1/path = NodePath("Camara:zoom")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 20),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 20, 28.4, 28.5, 41.733334, 41.8),
+"transitions": PackedFloat32Array(1, 1, 0, 1, 0, 1),
 "update": 0,
-"values": [Vector2(0.35, 0.35), Vector2(0.8, 0.8)]
+"values": [Vector2(0.35, 0.35), Vector2(0.8, 0.8), Vector2(0.8, 0.8), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(0.8, 0.8)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -51,34 +63,338 @@ tracks/2/path = NodePath("Camara:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 22.433332, 22.5, 28, 28.5, 41.733334, 41.8),
+"transitions": PackedFloat32Array(1, 0, 1, 0, 1, 0, 1),
 "update": 0,
-"values": [Vector2(1940, 1620)]
+"values": [Vector2(1940, 1620), Vector2(1940, 1620), Vector2(1120, 1620), Vector2(2600, 1620), Vector2(1940, 1620), Vector2(1940, 1620), Vector2(1800, 1620)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Christine:texture")
+tracks/3/path = NodePath("Escenario/Maestra:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("10_474kc")]
+"times": PackedFloat32Array(9, 9.5, 11, 11.5, 23, 23.5, 25, 25.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.5, 2.5), Vector2(-2.5, 2.5), Vector2(-2.5, 2.5), Vector2(2.5, 2.5), Vector2(2.5, 2.5), Vector2(-2.5, 2.5), Vector2(-2.5, 2.5), Vector2(2.5, 2.5)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Maestra:scale")
+tracks/4/path = NodePath("Escenario:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(9, 9.5, 11, 11.5),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Bambalinas:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 28.5, 35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Bambalinas/Erik:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(28.5, 32.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(292, 1450), Vector2(2164, 1450)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Bambalinas/Rueda:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(28.5, 32.5, 33, 35),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(-1, 1), Vector2(-1, 1), Vector2(1, 1)]
+"values": [0.0, 0.0, 0.17453292519943295, 6.283185307179586]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Escenario/Maestra:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(35, 36, 41.733334, 41.8),
+"transitions": PackedFloat32Array(1, 1, 10, 1),
+"update": 0,
+"values": [Vector2(1509, 1443), Vector2(1100, 1360), Vector2(1100, 1360), Vector2(1509, 1443)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Escenario/Christ:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(35, 36),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1274, 1560), Vector2(900, 1618)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Escenario/Telon de la muerte:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(36.5, 37),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1918, -128), Vector2(1918, 400)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Escenario/Telon de la muerte:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(37, 37.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(16, 1), Vector2(16, 11)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Escenario/PrimaDonna:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(37.7, 37.8),
+"transitions": PackedFloat32Array(0, 1),
+"update": 0,
+"values": [0.0, 1.5707964]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Escenario/Christine:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 41.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Escenario/Capa2/Sprite:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Escenario/Capa1/Sprite:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Escenario/PrimaDonna:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 41.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Escenario/Telon de la muerte:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(41.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Escenario/Christ:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 41.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_jji34"]
+resource_name = "Escena2"
+length = 80.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Escenario/Christine:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2666667, 1.46, 1.83, 2, 3.5, 3.7666667, 4.4666667, 4.59, 4.81, 4.95, 5.34, 5.4666667, 6, 6.1, 8, 8.233334, 8.4, 8.633333, 8.8, 9, 10.233334, 11, 11.266666, 11.515368, 12.233334, 12.435369, 13.005368, 13.5, 14.1, 35.472305, 40),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("23_eh51j"), ExtResource("12_tjnua"), ExtResource("12_tjnua"), ExtResource("23_jji34")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camara:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 31, 35.2, 35.5, 48, 54.933, 55),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 0, 1),
+"update": 0,
+"values": [Vector2(0.8, 0.8), Vector2(0.8, 0.8), Vector2(1, 1), Vector2(1, 1), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(0.9, 0.9)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camara:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 13.933333, 14, 20, 21, 31, 35.2, 35.5, 48, 54.9333, 55, 74),
+"transitions": PackedFloat32Array(1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1),
+"update": 0,
+"values": [Vector2(1800, 1620), Vector2(1800, 1620), Vector2(2600, 1620), Vector2(1260, 1620), Vector2(2095, 1620), Vector2(2095, 1620), Vector2(2065, 1620), Vector2(2065, 1620), Vector2(1945, 1620), Vector2(1945, 1620), Vector2(1945, 780), Vector2(1945, 1620)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Luz:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 38.866665, 40.033333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Luz:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 38.866665, 40),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Escenario/Capa1/Sprite:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 39.933334, 40.033333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Escenario/Capa2/Sprite:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 39.933334, 40.033333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Escenario/Capa3/Sprite3:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(40.033333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Escenario/Capa3/Sprite6:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(40.033333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.654232, 0.65423214, 0.6542318, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Escenario/Capa4/Sprite1:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(40.033333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.551624, 0.551624, 0.55162394, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Escenario/Capa4/Sprite3:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(40.033333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.74837965, 0.74837965, 0.74837965, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_xn33k"]
@@ -110,7 +426,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Christine:position")
+tracks/2/path = NodePath("Escenario/PrimaDonna:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -122,101 +438,429 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Christine:texture")
+tracks/3/path = NodePath("Escenario/Maestra:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("10_474kc")]
+"update": 0,
+"values": [Vector2(2.5, 2.5)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Maestra:scale")
+tracks/4/path = NodePath("Escenario:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Bambalinas:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Bambalinas/Erik:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1, 1)]
+"values": [Vector2(292, 1450)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Bambalinas/Rueda:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Escenario/Maestra:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1509, 1443)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Escenario/Christ:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1274, 1560)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Escenario/Telon de la muerte:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1918, -128)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Escenario/Telon de la muerte:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Escenario/PrimaDonna:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Escenario/Christine:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Escenario/Christine:texture")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_tjnua")]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Escenario/Capa2/Sprite:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Escenario/Capa1/Sprite:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Escenario/PrimaDonna:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Escenario/Telon de la muerte:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Luz:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Luz:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Escenario/Capa3/Sprite3:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Escenario/Capa3/Sprite6:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Escenario/Capa4/Sprite1:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Escenario/Capa4/Sprite3:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Escenario/Christ:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_474kc"]
 _data = {
 &"Escena1": SubResource("Animation_474kc"),
+&"Escena2": SubResource("Animation_jji34"),
 &"RESET": SubResource("Animation_xn33k")
 }
 
-[node name="Escenario1" type="Node2D" unique_id=972374403]
+[node name="PrimeraCancion" type="Node2D" unique_id=972374403]
 script = ExtResource("1_474kc")
 
-[node name="Capa1" type="Parallax2D" parent="." unique_id=333061241]
+[node name="Escenario" type="Node2D" parent="." unique_id=1989413875]
+
+[node name="Capa1" type="Parallax2D" parent="Escenario" unique_id=333061241]
 scroll_scale = Vector2(0.9, 0.9)
 
-[node name="Sprite" type="Sprite2D" parent="Capa1" unique_id=1379172187]
+[node name="Sprite" type="Sprite2D" parent="Escenario/Capa1" unique_id=1379172187]
+modulate = Color(0, 0, 0, 1)
 texture_filter = 1
 texture = ExtResource("1_xn33k")
 centered = false
 
-[node name="Capa2" type="Parallax2D" parent="." unique_id=1681280568]
+[node name="Capa2" type="Parallax2D" parent="Escenario" unique_id=1681280568]
 scroll_scale = Vector2(0.95, 0.95)
 
-[node name="Sprite" type="Sprite2D" parent="Capa2" unique_id=2053542654]
+[node name="Sprite" type="Sprite2D" parent="Escenario/Capa2" unique_id=2053542654]
+modulate = Color(0, 0, 0, 1)
 texture = ExtResource("2_474kc")
 centered = false
 
-[node name="Capa3" type="Parallax2D" parent="." unique_id=1649255965]
+[node name="Capa3" type="Parallax2D" parent="Escenario" unique_id=1649255965]
 scroll_scale = Vector2(0.98, 0.98)
 
-[node name="Sprite1" type="Sprite2D" parent="Capa3" unique_id=625130614]
+[node name="Sprite1" type="Sprite2D" parent="Escenario/Capa3" unique_id=625130614]
 texture = ExtResource("3_lnxn8")
 centered = false
 
-[node name="Sprite2" type="Sprite2D" parent="Capa3" unique_id=174744581]
+[node name="Sprite2" type="Sprite2D" parent="Escenario/Capa3" unique_id=174744581]
 texture = ExtResource("4_qluyb")
 centered = false
 
-[node name="Sprite3" type="Sprite2D" parent="Capa3" unique_id=952335267]
+[node name="Sprite3" type="Sprite2D" parent="Escenario/Capa3" unique_id=952335267]
+visible = false
 texture = ExtResource("5_86csc")
 centered = false
 
-[node name="Sprite4" type="Sprite2D" parent="Capa3" unique_id=912189195]
+[node name="Sprite4" type="Sprite2D" parent="Escenario/Capa3" unique_id=912189195]
 texture = ExtResource("6_ny7qb")
 centered = false
 
-[node name="Sprite5" type="Sprite2D" parent="Capa3" unique_id=1567553067]
+[node name="Sprite5" type="Sprite2D" parent="Escenario/Capa3" unique_id=1567553067]
 texture = ExtResource("7_1y178")
 centered = false
 
-[node name="Sprite6" type="Sprite2D" parent="Capa3" unique_id=1967558179]
+[node name="Sprite6" type="Sprite2D" parent="Escenario/Capa3" unique_id=1967558179]
 texture = ExtResource("8_hx6ht")
 centered = false
 
-[node name="Christine" type="Sprite2D" parent="." unique_id=1355259918]
-modulate = Color(0.83445466, 0.83445466, 0.83445466, 1)
-position = Vector2(1941.0001, 1562.0001)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("10_474kc")
-
-[node name="Maestra" type="Sprite2D" parent="." unique_id=1169678768]
-position = Vector2(1557, 1506)
+[node name="Maestra" type="Sprite2D" parent="Escenario" unique_id=1169678768]
+position = Vector2(1509, 1443)
+scale = Vector2(2.5, 2.5)
 texture = ExtResource("11_lnxn8")
 
-[node name="Capa4" type="Parallax2D" parent="." unique_id=72822160]
+[node name="Christ" type="Sprite2D" parent="Escenario" unique_id=2103440704]
+position = Vector2(1274, 1560)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_tjnua")
 
-[node name="Sprite1" type="Sprite2D" parent="Capa4" unique_id=1721390414]
+[node name="Telon de la muerte" type="Sprite2D" parent="Escenario" unique_id=1868938694]
+modulate = Color(1, 0.1254902, 0.18039216, 1)
+position = Vector2(1918, -128)
+scale = Vector2(16, 1)
+texture = ExtResource("11_lnxn8")
+centered = false
+offset = Vector2(-64, 0)
+
+[node name="PrimaDonna" type="Sprite2D" parent="Escenario" unique_id=1355259918]
+position = Vector2(1941.0001, 1562.0001)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_lnxn8")
+
+[node name="Christine" type="Sprite2D" parent="Escenario" unique_id=721967597]
+visible = false
+position = Vector2(1945, 1592)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_tjnua")
+
+[node name="Capa4" type="Parallax2D" parent="Escenario" unique_id=72822160]
+
+[node name="Sprite1" type="Sprite2D" parent="Escenario/Capa4" unique_id=1721390414]
 texture = ExtResource("9_0n4x7")
 centered = false
 
-[node name="Sprite2" type="Sprite2D" parent="Capa4" unique_id=1379432791]
+[node name="Sprite2" type="Sprite2D" parent="Escenario/Capa4" unique_id=1379432791]
 texture = ExtResource("10_830tx")
 centered = false
 
-[node name="Sprite3" type="Sprite2D" parent="Capa4" unique_id=891195705]
+[node name="Sprite3" type="Sprite2D" parent="Escenario/Capa4" unique_id=891195705]
 texture = SubResource("CompressedTexture2D_xn33k")
+centered = false
+
+[node name="Bambalinas" type="Node2D" parent="." unique_id=934638628]
+visible = false
+
+[node name="Capa1" type="Parallax2D" parent="Bambalinas" unique_id=2011609229]
+
+[node name="Sprite1" type="Sprite2D" parent="Bambalinas/Capa1" unique_id=459042518]
+texture = ExtResource("12_0sq0p")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="Bambalinas/Capa1" unique_id=1549473599]
+texture = ExtResource("13_u13x4")
+centered = false
+
+[node name="Sprite3" type="Sprite2D" parent="Bambalinas/Capa1" unique_id=1026075329]
+texture = ExtResource("14_tjnua")
+centered = false
+
+[node name="Sprite4" type="Sprite2D" parent="Bambalinas/Capa1" unique_id=1270084127]
+texture = ExtResource("15_jji34")
+centered = false
+
+[node name="Erik" type="Sprite2D" parent="Bambalinas" unique_id=1153257906]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(292, 1450)
+scale = Vector2(4, 4)
+texture = ExtResource("11_lnxn8")
+
+[node name="Rueda" type="Sprite2D" parent="Bambalinas" unique_id=1188012551]
+modulate = Color(0.36607093, 0.15133971, 0.014020705, 1)
+position = Vector2(2844, 1245)
+scale = Vector2(6, 6)
+texture = ExtResource("11_lnxn8")
+
+[node name="Capa2" type="Parallax2D" parent="Bambalinas" unique_id=872512929]
+
+[node name="Sprite1" type="Sprite2D" parent="Bambalinas/Capa2" unique_id=1411510620]
+texture = ExtResource("16_eh51j")
+centered = false
+
+[node name="Sprite2" type="Sprite2D" parent="Bambalinas/Capa2" unique_id=2001502584]
+texture = ExtResource("17_jgyl3")
+centered = false
+
+[node name="Sprite3" type="Sprite2D" parent="Bambalinas/Capa2" unique_id=1277750685]
+texture = ExtResource("18_naidv")
+centered = false
+
+[node name="Sprite4" type="Sprite2D" parent="Bambalinas/Capa2" unique_id=410061904]
+texture = ExtResource("19_6gkyt")
 centered = false
 
 [node name="BailesYCamara" type="AnimationPlayer" parent="." unique_id=1177040750]
@@ -231,3 +875,20 @@ limit_right = 3840
 limit_bottom = 2160
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+
+[node name="Musica" type="AudioStreamPlayer" parent="." unique_id=24714920]
+stream = ExtResource("22_u13x4")
+
+[node name="Luz" type="ColorRect" parent="." unique_id=587217977]
+visible = false
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(3840, 2160)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 3840.0
+offset_bottom = 2160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="animation_finished" from="BailesYCamara" to="." method="AnimacionEscenasFinalizada"]

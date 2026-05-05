@@ -3,10 +3,8 @@ extends CanvasLayer
 
 var Puntuacion : int
 
-@export var Jugador1Trigger : bool
-@export var Jugador2Trigger : bool
-@export var Jugador3Trigger : bool
-@export var Jugador4Trigger : bool
+var JugadorTrigger : Array = [false, false, false, false]
+var FallarComando : Array = [false, false, false, false]
 
 var StyleBoxJugadores : Array = [StyleBoxFlat.new(), StyleBoxFlat.new(), StyleBoxFlat.new(), StyleBoxFlat.new()]
 
@@ -34,61 +32,89 @@ func _ready() -> void:
 	StyleBoxJugador4Activado.set_border_width_all(8)
 
 func _process(_delta: float) -> void:
-	if Jugador1Trigger and Input.is_action_just_pressed("Maestra"):
-		Puntuacion += 100
-		ActualizarPuntuacion()
-		EsconderTriggerJugador1()
-		Jugador1Trigger = false
+	if Input.is_action_just_pressed("Maestra"):
+		if JugadorTrigger[0]:
+			Puntuacion += 100
+			ActualizarPuntuacion()
+			EsconderTriggerJugador1()
+		else:
+			if !FallarComando[0] and $Jugador1.is_visible_in_tree(): FallarComando[0] = true
 	
-	if Jugador2Trigger and Input.is_action_just_pressed("Erik"):
-		Puntuacion += 100
-		ActualizarPuntuacion()
-		EsconderTriggerJugador2()
-		Jugador2Trigger = false
+	if Input.is_action_just_pressed("Erik"):
+		if JugadorTrigger[1]:
+			Puntuacion += 100
+			ActualizarPuntuacion()
+			EsconderTriggerJugador2()
+		else:
+			if !FallarComando[1] and $Jugador2.is_visible_in_tree(): FallarComando[1] = true
 	
-	if Jugador3Trigger and Input.is_action_just_pressed("Christine"):
-		Puntuacion += 100
-		ActualizarPuntuacion()
-		EsconderTriggerJugador3()
-		Jugador3Trigger = false
+	if Input.is_action_just_pressed("Christine"):
+		if JugadorTrigger[2]:
+			Puntuacion += 100
+			ActualizarPuntuacion()
+			EsconderTriggerJugador3()
+		else:
+			if !FallarComando[2] and $Jugador3.is_visible_in_tree(): FallarComando[2] = true
 	
-	if Jugador4Trigger and Input.is_action_just_pressed("Vizconde"):
-		Puntuacion += 100
-		ActualizarPuntuacion()
-		EsconderTriggerJugador4()
-		Jugador4Trigger = false
+	if Input.is_action_just_pressed("Vizconde"):
+		if JugadorTrigger[3]:
+			Puntuacion += 100
+			ActualizarPuntuacion()
+			EsconderTriggerJugador4()
+		else:
+			if !FallarComando[3] and $Jugador4.is_visible_in_tree(): FallarComando[3] = true
 
 func MostrarTriggerJugador1() -> void:
 	$Jugador1.scale = Vector2(2.0, 2.0)
 	$Jugador1.add_theme_stylebox_override("panel", StyleBoxJugador1Activado)
+	
+	if !FallarComando[0]: JugadorTrigger[0] = true
 
 func MostrarTriggerJugador2() -> void:
 	$Jugador2.scale = Vector2(2.0, 2.0)
 	$Jugador2.add_theme_stylebox_override("panel", StyleBoxJugador2Activado)
+	
+	if !FallarComando[1]: JugadorTrigger[1] = true
 
 func MostrarTriggerJugador3() -> void:
 	$Jugador3.scale = Vector2(2.0, 2.0)
 	$Jugador3.add_theme_stylebox_override("panel", StyleBoxJugador3Activado)
+	
+	if !FallarComando[2]: JugadorTrigger[2] = true
 
 func MostrarTriggerJugador4() -> void:
 	$Jugador4.scale = Vector2(2.0, 2.0)
 	$Jugador4.add_theme_stylebox_override("panel", StyleBoxJugador4Activado)
+	
+	if !FallarComando[3]: JugadorTrigger[3] = true
 
 func EsconderTriggerJugador1() -> void:
 	$Jugador1.scale = Vector2(1.0, 1.0)
 	$Jugador1.add_theme_stylebox_override("panel", StyleBoxJugadores[0])
+	
+	if FallarComando[0]: FallarComando[0] = false
+	if JugadorTrigger[0]: JugadorTrigger[0] = false
 
 func EsconderTriggerJugador2() -> void:
 	$Jugador2.scale = Vector2(1.0, 1.0)
 	$Jugador2.add_theme_stylebox_override("panel", StyleBoxJugadores[1])
+	
+	if FallarComando[1]: FallarComando[1] = false
+	if JugadorTrigger[1]: JugadorTrigger[1] = false
 
 func EsconderTriggerJugador3() -> void:
 	$Jugador3.scale = Vector2(1.0, 1.0)
 	$Jugador3.add_theme_stylebox_override("panel", StyleBoxJugadores[2])
+	
+	if FallarComando[2]: FallarComando[2] = false
+	if JugadorTrigger[2]: JugadorTrigger[2] = false
 
 func EsconderTriggerJugador4() -> void:
 	$Jugador4.scale = Vector2(1.0, 1.0)
 	$Jugador4.add_theme_stylebox_override("panel", StyleBoxJugadores[3])
+	
+	if FallarComando[3]: FallarComando[3] = false
+	if JugadorTrigger[3]: JugadorTrigger[3] = false
 
 func ActualizarPuntuacion() -> void:
 	$Puntuacion.text = str(Puntuacion)
