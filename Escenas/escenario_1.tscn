@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dp4bwug5xq58m" path="res://Visual/Escenarios/1/escenario 1  . 6.png" id="8_hx6ht"]
 [ext_resource type="Texture2D" uid="uid://boi7lppoolkfa" path="res://Visual/Escenarios/1/escenario 1  . 7.png" id="9_0n4x7"]
 [ext_resource type="Texture2D" uid="uid://c3gh76mhxawwo" path="res://Visual/Escenarios/1/escenario 1  . 7.2.png" id="10_830tx"]
+[ext_resource type="Texture2D" uid="uid://t6chtqeuxqux" path="res://Visual/Personajes/Maestra/0001_0.png" id="10_jgyl3"]
 [ext_resource type="Texture2D" uid="uid://be5n4bkqtqdvl" path="res://Visual/Personajes/Prima Donna/Prima Donna.png" id="10_lnxn8"]
 [ext_resource type="Texture2D" uid="uid://ctuuxbncw21f0" path="res://icon.svg" id="11_lnxn8"]
 [ext_resource type="Texture2D" uid="uid://54jlps8yqsof" path="res://Visual/Escenarios/2/Bambalinas arriba 1.png" id="12_0sq0p"]
@@ -78,7 +79,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(9, 9.5, 11, 11.5, 23, 23.5, 25, 25.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(2.5, 2.5), Vector2(-2.5, 2.5), Vector2(-2.5, 2.5), Vector2(2.5, 2.5), Vector2(2.5, 2.5), Vector2(-2.5, 2.5), Vector2(-2.5, 2.5), Vector2(2.5, 2.5)]
+"values": [Vector2(1.3, 1.3), Vector2(-1.3, 1.3), Vector2(-1.3, 1.3), Vector2(1.3, 1.3), Vector2(1.3, 1.3), Vector2(-1.3, 1.3), Vector2(-1.3, 1.3), Vector2(1.3, 1.3)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -87,10 +88,10 @@ tracks/4/path = NodePath("Escenario:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 28.5, 35),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, false, true]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -263,7 +264,7 @@ tracks/18/keys = {
 
 [sub_resource type="Animation" id="Animation_jji34"]
 resource_name = "Escena2"
-length = 80.0
+length = 160.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -283,10 +284,10 @@ tracks/1/path = NodePath("Camara:zoom")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 31, 35.2, 35.5, 48, 54.933, 55),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 0, 1),
+"times": PackedFloat32Array(0, 31, 35.2, 35.5, 48, 54.933, 55, 86.433334, 86.5, 95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 0, 1, 0, 1, 1),
 "update": 0,
-"values": [Vector2(0.8, 0.8), Vector2(0.8, 0.8), Vector2(1, 1), Vector2(1, 1), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(0.9, 0.9)]
+"values": [Vector2(0.8, 0.8), Vector2(0.8, 0.8), Vector2(1, 1), Vector2(1, 1), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(0.9, 0.9), Vector2(0.9, 0.9), Vector2(0.7, 0.7), Vector2(0.9, 0.9)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -295,10 +296,10 @@ tracks/2/path = NodePath("Camara:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 13.933333, 14, 20, 21, 31, 35.2, 35.5, 48, 54.9333, 55, 74),
-"transitions": PackedFloat32Array(1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1),
+"times": PackedFloat32Array(0, 13.933333, 14, 20, 21, 31, 35.2, 35.5, 48, 54.9333, 55, 74, 76, 86, 86.5, 95),
+"transitions": PackedFloat32Array(1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1),
 "update": 0,
-"values": [Vector2(1800, 1620), Vector2(1800, 1620), Vector2(2600, 1620), Vector2(1260, 1620), Vector2(2095, 1620), Vector2(2095, 1620), Vector2(2065, 1620), Vector2(2065, 1620), Vector2(1945, 1620), Vector2(1945, 1620), Vector2(1945, 780), Vector2(1945, 1620)]
+"values": [Vector2(1800, 1620), Vector2(1800, 1620), Vector2(2600, 1620), Vector2(1260, 1620), Vector2(2095, 1620), Vector2(2095, 1620), Vector2(2065, 1620), Vector2(2065, 1620), Vector2(1945, 1620), Vector2(1945, 1620), Vector2(1945, 780), Vector2(1945, 1620), Vector2(2460, 1620), Vector2(1320, 1620), Vector2(2032, 1620), Vector2(2080, 1620)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -445,7 +446,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2.5, 2.5)]
+"values": [Vector2(1.3, 1.3)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -771,8 +772,8 @@ centered = false
 
 [node name="Maestra" type="Sprite2D" parent="Escenario" unique_id=1169678768]
 position = Vector2(1509, 1443)
-scale = Vector2(2.5, 2.5)
-texture = ExtResource("11_lnxn8")
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("10_jgyl3")
 
 [node name="Christ" type="Sprite2D" parent="Escenario" unique_id=2103440704]
 position = Vector2(1274, 1560)
